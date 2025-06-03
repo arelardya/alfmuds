@@ -1,0 +1,115 @@
+*Results*
+
+
+Model : XGBoost
+Hyperparameter : Yes
+SMOTE : Yes
+
+Total Time : 161m
+
+Overall Accuracy Summary:
+Binary Classification - Training Accuracy: 0.9032
+Binary Classification - Test Accuracy: 0.9140
+Multiclass Classification - Training Accuracy: 1.0000
+Multiclass Classification - Test Accuracy: 1.0000
+
+Note : Not all feature was used.
+
+********************************************************
+
+Model : XGBoost
+Hyperparameter : No
+SMOTE : No
+
+Total Time : 15s
+
+Overall Accuracy Summary:
+Binary Classification - Training Accuracy: 0.9752
+Binary Classification - Test Accuracy: 0.9730
+Multiclass Classification - Training Accuracy: 0.9905
+Multiclass Classification - Test Accuracy: 0.9852
+
+with similar value feature deleted
+Overall Results Summary:
+Binary Classification - Training Accuracy: 0.9750
+Binary Classification - Test Accuracy: 0.9729
+Multiclass Classification - Training Accuracy: 0.9902
+Multiclass Classification - Test Accuracy: 0.9851
+
+********************************************************
+
+Model : XGBoost
+Hyperparameter : Yes - GridSearchCV
+SMOTE : No
+
+Total Time : 7m 35s
+
+Best Parameters from Grid Search: 
+{'learning_rate': 0.2, 'max_depth': 7, 'n_estimators': 200, 'subsample': 0.8}
+
+Overall Results Summary:
+Binary Classification - Training Accuracy: 0.9752
+Binary Classification - Test Accuracy: 0.9730
+Multiclass Classification - Training Accuracy: 0.9957
+Multiclass Classification - Test Accuracy: 0.9877
+
+********************************************************
+
+Model : XGBoost
+Hyperparameter : No
+SMOTE : Yes
+
+Total Time : 51s
+
+Overall Results Summary:
+Binary Classification - Training Accuracy: 0.9744
+Binary Classification - Test Accuracy: 0.9720
+Multiclass Classification - Training Accuracy: 0.9905
+Multiclass Classification - Test Accuracy: 0.9852
+
+********************************************************
+
+Model : Random Forest
+Hyperparameter : Yes
+SMOTE : Yes
+
+Total Time : 259m
+
+Overall Results Summary:
+Binary Classification - Training Accuracy: 0.9996
+Binary Classification - Test Accuracy: 0.9752
+Multiclass Classification - Training Accuracy: 0.9965
+Multiclass Classification - Test Accuracy: 0.9835
+
+********************************************************
+
+Model : Random Forest
+Hyperparameter : No
+SMOTE : No
+
+Total Time : 4m
+
+Overall Results Summary:
+Binary Classification - Training Accuracy: 0.9996
+Binary Classification - Test Accuracy: 0.9750
+Multiclass Classification - Training Accuracy: 0.9983
+Multiclass Classification - Test Accuracy: 0.9831
+
+********************************************************
+Model : Random Forest
+Hyperparameter : Yes
+SMOTE : No
+
+Total Time : n/a
+
+Best Parameter:
+Best parameters for binary classification: {'max_depth': 30, 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 200}
+Best parameters for multiclass classification: {'max_depth': 30, 'min_samples_leaf': 1, 'min_samples_split': 3, 'n_estimators': 152}
+
+Overall Results Summary:
+Binary Classification - Training Accuracy: 0.9916
+Binary Classification - Test Accuracy: 0.9757
+Multiclass Classification - Training Accuracy: 0.9965
+Multiclass Classification - Test Accuracy: 0.9835
+
+********************************************************

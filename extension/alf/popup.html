@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: Arial; }
+  </style>
+</head>
+<body>
+  <h3>URL Detection</h3>
+  <input type="text" id="url" placeholder="Enter URL">
+  <button id="checkUrl">Check URL</button>
+  <div id="progress-container" style="display: none;">
+    <label>Analyzing URL...</label>
+    <progress id="progress-bar" value="0" max="100" style="width: 100%;"></progress>
+  </div>
+  
+  <div id="result"></div>  
+
+  <script src="popup.js"></script>
+</body>
+</html>
